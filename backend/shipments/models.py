@@ -10,7 +10,6 @@ class Shipment(models.Model):
     recipient_address = models.TextField(help_text="Recipient address")
     date_sent = models.DateTimeField(help_text="Parcel send date")
     date_delivered = models.DateTimeField(help_text="Parcel delivery date", default=None, null=True, blank=True)
-    weight = models.FloatField(help_text="Parcel weight in kilograms")
 
     class Meta:
         verbose_name = "Shipment"

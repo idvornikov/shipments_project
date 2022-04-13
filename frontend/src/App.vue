@@ -8,7 +8,7 @@ import TheShipments from './components/Shipments.vue'
 export default {
   name: 'App',
   components: {
-    TheShipments
+    TheShipments,
   }
 }
 </script>

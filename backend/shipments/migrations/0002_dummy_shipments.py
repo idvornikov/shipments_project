@@ -6,14 +6,13 @@ fake = Faker()
 
 
 def create_dummy_data(apps, schema_editor):
-    for _ in range(17):
+    for _ in range(3):
         shipment = apps.get_model("shipments", "Shipment")
         shipment.objects.create(
             description=fake.first_name(),
             sender_address=fake.address(),
             recipient_address=fake.address(),
             date_sent=fake.date_time(tzinfo=UTC),
-            weight=1,
         )
 
 

@@ -14,7 +14,6 @@ class ShipmentSerializer(serializers.ModelSerializer):
             "recipient_address",
             "date_sent",
             "date_delivered",
-            "weight",
         ]
 
         extra_kwargs = {"date_delivered": {"required": False}, "track_number": {"required": False}}
